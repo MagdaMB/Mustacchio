@@ -1,0 +1,173 @@
+* {
+	padding: 0;
+	margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background: #ffffff;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header__img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.header__nav {
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.header__nav div {
+    margin: 10px 0;
+}
+
+.header__nav a {
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.header__nav a.active {
+    color: #2B9478;
+}
+
+.header__nav a:hover {
+    color: #2B9478;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__title {
+    background-color: grey;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section__box {
+    width: 95%;
+    border: 2px solid #000000;
+    margin: 5px 2px;
+}
+
+.section__box--flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__box img {
+    width: 100%;
+    border-bottom: 2px solid #000000;
+    opacity: 0.7;
+    transition: opacity 1s ease-in-out;
+}
+
+.section__box img:hover {
+    opacity: 1;
+}
+.section__box h1 {
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.section__box p {
+    font-size: 12px;
+    line-height: 1.8;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+.section__box a {
+    color: #000000;
+}
+
+.section__box a:hover {
+    color: grey;
+}
+
+.section__box button {
+    padding: 5px 20px;
+    background: #000000;
+    color: #ffffff;
+    font-size: 18px;
+    border: 1px solid black;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.section__box button:hover {
+    color: #000000;
+    background: #ffffff;
+    border: 2px solid #000000;
+}
+
+footer {
+    background: grey;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer__text {
+    margin: 20px 10px 5px 10px;
+}
+
+.footer__icons {
+    margin: 5px 10px 20px 10px;
+}
+
+.footer__icons img {
+    margin: 3px;
+}
+
+
+@media (min-width: 400px) {
+    .header__img {margin: 30px 0}
+    .header__nav {display: flex; flex-direction: row; justify-content: center; margin: 20px 0}
+    .header__nav div {margin: 10px}
+    .main {display: flex; flex-direction: column; align-items: center; margin-bottom: 20px}
+    
+}
+
+@media (min-width: 650px) {
+    .main__title {width: 40%;}
+    .section__box {max-width: 900px; display: flex; justify-content: center;}
+    .section__box img {max-width: 376px; border-right: 2px solid #000000; border-bottom: none;}
+    .section__box--flex {display: flex; flex-direction: column; justify-content: center}
+    footer {display: flex; flex-direction: row; justify-content: space-between; align-items: center;}
+    .footer__text {margin: 40px 20px;}
+    .footer__icons {margin: 40px 20px;}
+    .footer__icons img {margin: 0 5px}
+}
+
+@media (min-width: 768px) {
+    
+}
