@@ -12,19 +12,9 @@
 
 <body>
   <div class="container">
-    <header>
-      <div class="header__img">
-        <img src="images/logo.jpg">
-      </div>
-      <nav class="header__nav">
-        <div><a href="index.html">Home</a></div>
-        <div><a href="index-about.html">About</a></div>
-        <div><a href="index-gallery.html">Gallery</a></div>
-        <div><a class="active" href="index-blog.html">Blog</a></div>
-        <div><a href="index-contact.html">Contact</a></div>
-        <div><a href="logIn.php">Log in</a></div>
-      </nav>
-    </header>
+    <?php
+    include('./components/header.php');
+    ?>
 
     <main class="main">
       <div class="main__title">
@@ -62,17 +52,9 @@
           Change, add, and remove items as you like.</p>
       </div>
     </main>
-    <footer>
-      <div class="footer__text">
-        <p>© 2023 by Mustacchio. All rights reserved.</p>
-      </div>
-      <div class="footer__icons">
-        <a href=""><img src="images/icons/icon-facebook.jpg" class="footer__icons--facebook"></a>
-        <a href=""><img src="images/icons/icon-googleplus.jpg" class="footer__icons--googleplus"></a>
-        <a href=""><img src="images/icons/icon-pinterest.jpg" class="footer__icons--pinterest"></a>
-        <a href=""><img src="images/icons/icon-twitter.jpg" class="footer__icons--twitter"></a>
-      </div>
-    </footer>
+    <?php
+    include('./components/footer.php');
+    ?>
   </div>
 
   <script type="text/javascript" src="script.js"></script>
